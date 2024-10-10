@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "shcheck"
+version = "1.6.7"
+description = "A basic tool to check security headers of a website"
+authors = ["Your Name <you@example.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = {extras = ["socks"], version = "^2.32.3"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+shcheck = "shcheck.shcheck:main"

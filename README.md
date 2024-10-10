@@ -19,6 +19,12 @@ I think there is a lot to improve, and I will be grateful if somebody wants to h
 
 ## How to run:
 
+### Poetry
+```bash
+poetry install
+poetry run shcheck https://insecurity.blog
+```
+
 ### Pypi
 ```bash
 pip3 install shcheck
@@ -26,11 +32,11 @@ shcheck.py https://insecurity.blog
 ```
 
 ### Docker
-First build your docker container using something like this: 
+First build your docker container using something like this:
 
 `docker build -t shcheck .`
 
-Then simply run your docker container using something like this where you specify which website you want to check headers on: 
+Then simply run your docker container using something like this where you specify which website you want to check headers on:
 
 `docker run -it --rm shcheck https://insecurity.blog`
 
